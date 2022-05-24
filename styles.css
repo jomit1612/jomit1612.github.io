@@ -47,10 +47,58 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: url("images/7CC26294-6241-4CE4-A1EF-E46DC1678277\ 2.jpg")
-    no-repeat center center/cover;
+  background: url("images/me.jpg") no-repeat center center/cover;
   height: 900px;
   width: 100%;
   z-index: -1;
   opacity: 0.8;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid white; */
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+.headings {
+  font-family: century;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+.btn {
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  transition: 0.6s ease;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px white;
+  /* font-weight: bold; */
+}
+#about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+#pic {
+  display: flex;
+}
+#pic img {
+  width: 575px;
+  height: 480px;
+}
+#intro {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
 }

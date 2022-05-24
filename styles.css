@@ -28,7 +28,29 @@
   transition: all 0.5s ease;
 }
 .navbar ul li a:hover {
-  background-color: lightcyan;
-  color: black;
+  background-color: rgb(33, 133, 127);
+  color: rgb(255, 255, 255);
   box-shadow: 0 0 10px white;
+}
+
+#homepage {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 840px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#homepage::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("images/7CC26294-6241-4CE4-A1EF-E46DC1678277\ 2.jpg")
+    no-repeat center center/cover;
+  height: 900px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
 }

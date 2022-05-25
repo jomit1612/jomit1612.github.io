@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
   <body>
     <nav class="navbar">
@@ -18,22 +22,19 @@
     <section id="homepage">
       <div class="main">
         <h1 class="headings">Jomit Thomas</h1>
-        <button class="btn" onclick='window.location.href = "#contact" '>
+        <button class="btn" onclick='window.location.href = "#contact-page" '>
           Contact details
         </button>
       </div>
     </section>
     <section id="about">
-      <h1 class="headings">ABOUT ME</h1>
+      <h1 class="headings">About Me</h1>
       <div id="pic">
         <img src="images/code image.jpg" alt="" />
         <div id="intro">
           <h2>Jomit</h2>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem
-            hic voluptate cupiditate necessitatibus fuga soluta aliquid. Nam
-            amet, debitis esse modi incidunt, eos quis, temporibus officiis
-            distinctio fugit eveniet ut.
+            Currently learning fullstack at northcoders Manchester
           </p>
         </div>
       </div>
@@ -44,21 +45,14 @@
       <div class="row">
         <div class="box">
           <img src="images/pokemon.png" />
-          <h1 class="headings">Pokemon game</h1>
+          <h1 class="headings"><a href="https://github.com/jomit1612/fun-pokemon-battler.git">Pokemon game</a> </h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            voluptates dolores voluptate, officia veniam hic obcaecati enim quis
-            eaque nostrum consequuntur, dignissimos temporibus sint odio quia
-            facere fugit quaerat id?Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Ad corporis recusandae hic cupiditate voluptas
-            reiciendis ipsam exercitationem harum accusamus excepturi, doloribus
-            vero distinctio necessitatibus eum, ullam libero voluptates autem
-            maxime.
+            Backend project created using javascript and jest.
           </p>
         </div>
         <div class="box">
           <img src="images/news.png" alt="" />
-          <h1 class="headings">news app</h1>
+          <h1 class="headings"><a href="https://github.com/jomit1612/BC-NC-NEWS.git">News app</a> </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
             voluptates dolores voluptate, officia veniam hic obcaecati enim quis
@@ -72,7 +66,7 @@
         </div>
         <div class="box">
           <img src="images/website.png" />
-          <h1 class="headings">Website</h1>
+          <h1 class="headings"><a href="https://github.com/jomit1612/jomit1612.github.io.git">Website</a> </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
             voluptates dolores voluptate, officia veniam hic obcaecati enim quis
@@ -85,31 +79,21 @@
           </p>
         </div>
       </div>
-    </section>
-    <section id="contact">
-      <h1 class="headings">Contact</h1>
-      <form action="" class="form">
-        <input
-          type="text"
-          name="email"
-          class="input"
-          placeholder="enter your name"
-        />
-        <input
-          type="email"
-          name="email"
-          class="input"
-          placeholder="enter your email"
-        />
-        <textarea
-          name="msf"
-          id="msg"
-          cols="30"
-          rows="10"
-          placeholder="Enter"
-        ></textarea>
-        <input type="submit" value="SEND" id="send" />
-      </form>
-    </section>
+    </section id='contact' class="contact-page">
+    <h1 class="headings">Contact Info</h1>
+    <div class="contact-info">
+      <div class="card">
+        <i class="card-icon far fa-envelope"></i>
+        <p>jomitthomas1612@gmail.com</p>
+      </div>
+      <div class="card">
+        <i class="card-icon fas fa-phone"></i>
+        <p>07585217496</p>
+      </div>
+      <div class="card">
+        <i class="card-icon fas fa-map-marker-alt"></i>
+        <p>Manchester,UK</p>
+      </div>
+    </div>
   </body>
 </html>

@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .navbar {
   display: flex;
   justify-content: center;
@@ -12,9 +11,7 @@
   position: sticky;
   top: 0;
 }
-#html {
-  scroll-behavior: smooth;
-}
+
 .navbar ul {
   display: flex;
   list-style: none;
@@ -29,12 +26,12 @@
   text-decoration: none;
   color: white;
   padding: 8px 25px;
-  transition: all 0.5s ease;
+  transition: all 0.8s ease;
 }
 .navbar ul li a:hover {
   background-color: rgb(33, 133, 127);
   color: rgb(255, 255, 255);
-  box-shadow: 0 0 10px white;
+  box-shadow: 0 0 10px black;
 }
 
 #homepage {
@@ -118,6 +115,7 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+  background-color: rgb(252, 152, 129);
 }
 .row {
   display: flex;
@@ -130,7 +128,7 @@
   flex-direction: column;
   width: 350px;
   height: 450px;
-  border: 1px solid black;
+  border: 1px transparent black;
   margin: 10px;
   align-items: center;
   text-align: justify;
@@ -144,7 +142,8 @@
   background-position: left bottom;
   color: white;
   border: none;
-  box-shadow: 0 0 20px black;
+  border: 1px solid black;
+  /* box-shadow: 0 0 20px black; */
 }
 .box img {
   width: 80px;
@@ -190,4 +189,56 @@
 #send:hover {
   cursor: pointer;
   box-shadow: 0 0 10px grey;
+}
+.contact-page {
+  align-items: center;
+  justify-content: center;
+}
+.contact-info {
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 0 20px;
+}
+
+.card {
+  background: #2f3542;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.card-icon {
+  font-size: 28px;
+  /* background: #ff6348; */
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+.card:hover .card-icon {
+  background-color: none;
+  color: #ff6348;
+  transform: scale(1.6);
+}
+.card p {
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+.card:hover p {
+  max-height: 40px;
+  opacity: 1;
 }

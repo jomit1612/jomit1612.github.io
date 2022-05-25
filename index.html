@@ -10,20 +10,22 @@
   <body>
     <nav class="navbar">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="#homepage">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
       </ul>
     </nav>
     <section id="homepage">
       <div class="main">
         <h1 class="headings">Jomit Thomas</h1>
-        <button class="btn">Contact details</button>
+        <button class="btn" onclick='window.location.href = "#contact" '>
+          Contact details
+        </button>
       </div>
     </section>
     <section id="about">
+      <h1 class="headings">ABOUT ME</h1>
       <div id="pic">
-        <h1 class="headings">ABOUT ME</h1>
         <img src="images/code image.jpg" alt="" />
         <div id="intro">
           <h2>Jomit</h2>
@@ -35,6 +37,79 @@
           </p>
         </div>
       </div>
+    </section>
+
+    <section id="projects">
+      <h1 class="headings">Projects</h1>
+      <div class="row">
+        <div class="box">
+          <img src="images/pokemon.png" />
+          <h1 class="headings">Pokemon game</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            voluptates dolores voluptate, officia veniam hic obcaecati enim quis
+            eaque nostrum consequuntur, dignissimos temporibus sint odio quia
+            facere fugit quaerat id?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ad corporis recusandae hic cupiditate voluptas
+            reiciendis ipsam exercitationem harum accusamus excepturi, doloribus
+            vero distinctio necessitatibus eum, ullam libero voluptates autem
+            maxime.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/news.png" alt="" />
+          <h1 class="headings">news app</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            voluptates dolores voluptate, officia veniam hic obcaecati enim quis
+            eaque nostrum consequuntur, dignissimos temporibus sint odio quia
+            facere fugit quaerat id?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ad corporis recusandae hic cupiditate voluptas
+            reiciendis ipsam exercitationem harum accusamus excepturi, doloribus
+            vero distinctio necessitatibus eum, ullam libero voluptates autem
+            maxime.
+          </p>
+        </div>
+        <div class="box">
+          <img src="images/website.png" />
+          <h1 class="headings">Website</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            voluptates dolores voluptate, officia veniam hic obcaecati enim quis
+            eaque nostrum consequuntur, dignissimos temporibus sint odio quia
+            facere fugit quaerat id?Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Ad corporis recusandae hic cupiditate voluptas
+            reiciendis ipsam exercitationem harum accusamus excepturi, doloribus
+            vero distinctio necessitatibus eum, ullam libero voluptates autem
+            maxime.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="headings">Contact</h1>
+      <form action="" class="form">
+        <input
+          type="text"
+          name="email"
+          class="input"
+          placeholder="enter your name"
+        />
+        <input
+          type="email"
+          name="email"
+          class="input"
+          placeholder="enter your email"
+        />
+        <textarea
+          name="msf"
+          id="msg"
+          cols="30"
+          rows="10"
+          placeholder="Enter"
+        ></textarea>
+        <input type="submit" value="SEND" id="send" />
+      </form>
     </section>
   </body>
 </html>
